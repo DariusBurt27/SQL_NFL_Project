@@ -12,5 +12,14 @@ Each row of the dataset gives us information on one play, with 318668 plays in t
 
 ## Analyzing the Data
 
-First, let us see how common pass and run plays are overall. 
+First, let us see how common pass and run plays are overall:
 
+![Screenshot 2025-04-20 160545](https://github.com/user-attachments/assets/1f22dba7-428f-46ec-81b8-24597d1bbe54)
+![Screenshot 2025-04-20 160555](https://github.com/user-attachments/assets/6de8c3cf-e4d0-4874-82bb-708f8812ce7c)
+
+It appears that pass plays are more common, comprising about 58% of plays. This makes sense as pass plays result in more yards gained on average, although they are a bit less consistent at gaining yards than run plays.
+
+Next, we will examine how down and distance affect play type. I filter the data to only show groups with counts over 100 so that we have a decent sample size to make conclusions from:
+
+![Screenshot 2025-04-20 160829](https://github.com/user-attachments/assets/f959e745-ce18-4ba2-8b61-084a155932e5)
+![Screenshot 2025-04-20 160853](https://github.com/user-attachments/assets/adcfe549-2a99-49a8-bf29-b1a7c4220c98)
