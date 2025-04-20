@@ -1,3 +1,7 @@
+# Examining the data
+SELECT *
+FROM nfl_plays.nfl_filtered;
+
 # Seeing overall how often pass plays are run vs. run plays.
 SELECT AVG(play_type)
 FROM nfl_plays.nfl_filtered;
