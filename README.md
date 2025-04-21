@@ -1,5 +1,5 @@
 # Analyzing NFL Data in SQL
- In this project I use SQL to analyze data on NFL plays from the 2009 NFL season to the 2018 NFL season. I downloaded the dataset from Kaggle which can be found [here](https://www.kaggle.com/datasets/kendallgillies/nflstatistics). I first cleaned and formatted the data using the Pandas library in Python. I was primarily focused on what factors contributed to a team either running or passing the ball, so I removed many unnecessary columns, leaving only 9 that I thought were relevant. I also filtered the data to only pass and run plays, leaving out other play types like kickoffs and field goals. Finally, I changed the "play_type" column to be a "1" for pass plays and a "0" for run plays.
+In this project I use SQL to analyze data on NFL plays from the 2009 NFL season to the 2018 NFL season. I downloaded the dataset from Kaggle which can be found [here](https://www.kaggle.com/datasets/kendallgillies/nflstatistics). I first cleaned and formatted the data using the Pandas library in Python. I was primarily focused on what factors contributed to a team either running or passing the ball, so I removed many unnecessary columns, leaving only 9 that I thought were relevant. I also filtered the data to only pass and run plays, leaving out other play types like kickoffs and field goals. Finally, I changed the "play_type" column to be a "1" for pass plays and a "0" for run plays.
 
  ## Dataset Overiew
 
@@ -32,3 +32,28 @@ Next, we will examine how field position affects play type. Once again I have fi
 ![Screenshot 2025-04-20 175318](https://github.com/user-attachments/assets/f8bf4f30-4b9a-4bd5-848e-a51cf613216a)
 
 The most obvious theme we see in the results is that situations with high percentages of run plays tend to be near either goal line. Once again we can attribute this to the consistancy of run plays. If only a few yards are needed to get into the endzone and score, run plays are often chosen. Similarly, if a team is backed up near its own goal line, they want to avoid losing yards as much as possible as they might end up getting a safety, so they opt for the more consistant choice of a run play.
+
+We can further illustrate this idea by making field position groups, and showing the percent of pass/run plays in each group:
+
+![Screenshot 2025-04-20 180140](https://github.com/user-attachments/assets/f3829659-54d9-459f-98c4-209982934d18)
+![Screenshot 2025-04-20 180153](https://github.com/user-attachments/assets/f21d00b8-d3fb-46a2-9ef2-eaf921eba5c4)
+
+The results show Group1 and Group6, the 2 groups where the team is close to either goal line, have the highest percentage of run plays. 
+
+Next, we will examine how score differential affects play type: 
+
+![Screenshot 2025-04-20 180424](https://github.com/user-attachments/assets/0757eeb4-b8ca-403c-82ad-bb7bcbff021a)
+![Screenshot 2025-04-20 180457](https://github.com/user-attachments/assets/391bf3fd-4a33-4cdb-afc4-fa4bfa84b81b)
+
+We can see that many of the situations with the highest percentage of pass plays happen when the team is down by a lot. Pass plays tend to result in more yards, so if a team needs to score a lot, they will be more likely to pass. Though they are less consistent, teams are willing to take the risk due to the deficit they must overcome. When teams are up by a lot, they will be more likely to run the ball. Since they are already winning, they just want to preserve their lead and run out the clock. Running the ball helps keep the clock moving, so teams that are ahead are more likely to run than pass. 
+
+Finally, similarily to the field position situation, we can make different groups for different score differential ranges:
+
+![Screenshot 2025-04-20 181557](https://github.com/user-attachments/assets/8be06e67-26db-4c81-8e31-d30bdd2ee42c)
+![Screenshot 2025-04-20 181609](https://github.com/user-attachments/assets/f4495fd5-787f-49d5-a1c7-deb66261853e)
+
+The results further illustrate our point, although their is an interesting situation with Group11, the group where the team is down by the most. Strangely, it does not correspond to the highest likelihood of a pass play, with Group9 and Group10 corresponding to a higher likelihood of passing. I think we can attribute this to teams being more likely to just give up. Sometimes, if it is near the end of the game and the team with the ball is losing by a lot, they might realize they have little chance of winning and just run the ball to end the game as soon as possible and move on. 
+
+## Conclusions
+
+
