@@ -26,4 +26,9 @@ Next, we will examine how down and distance affect play type. I filter the data 
 
 We can see from the first few rows that later down with more yards to go tend to correspond a higher percentage of passing plays. If we scroll to the bottom we can see many of the plays with the highest percentage of run plays correspond to earlier downs with less yards to go. This is likely due to pass plays having a higher average result in yards gained. When a lot of yards are needed and there are not many chances left to get those yards, teams opt to pass. The opposite is true for run plays. Since they are more consistent at gaining yards, if only a few are needed and there are many chances left for a first down, teams opt to run. 
 
+Next, we will examine how field position affects play type. Once again I have filtered the data to only show groups with counts over 100:
 
+![Screenshot 2025-04-20 175240](https://github.com/user-attachments/assets/c9c362f3-c6de-482b-abac-50c46817067b)
+![Screenshot 2025-04-20 175318](https://github.com/user-attachments/assets/f8bf4f30-4b9a-4bd5-848e-a51cf613216a)
+
+The most obvious theme we see in the results is that situations with high percentages of run plays tend to be near either goal line. Once again we can attribute this to the consistancy of run plays. If only a few yards are needed to get into the endzone and score, run plays are often chosen. Similarly, if a team is backed up near its own goal line, they want to avoid losing yards as much as possible as they might end up getting a safety, so they opt for the more consistant choice of a run play.
