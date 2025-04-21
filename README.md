@@ -56,4 +56,5 @@ The results further illustrate our point, although their is an interesting situa
 
 ## Conclusions
 
+We have observed many interesting trends in play selection for NFL games. Teams tend to choose pass plays when they need a lot of yards, whether that being due to them being down by a lot of points or needing a lot of yards to get a first down and keep the drive alive. Passing plays, however, are not as consistent as runs play. Running the ball has a higher chance of gaining yards than a pass play, although the yards gained are often not extremely high. Teams thus tend to leverage run plays when they only need a few yards, whether that be until a first down or until they reach the opponents endzone. Teams also utilize run plays to run down the clock. If they are already winning by a lot, they don't need the potential upside that passing plays offer, preferring to run the clock down and end the game as quick as possible. 
 
